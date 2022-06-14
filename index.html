@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DENCRYPT | With Agung & Salma</title>
     <link rel="shortcut icon" href="https://agungdwisahputra.github.io/Ucapan-Ulang-Tahun-Salma/img/galeri/alma%20(3).jpg" type="image/x-icon">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://agungdwisahputra.github.io/Ucapan-Ulang-Tahun-Salma/style.css">
 
@@ -19,12 +19,10 @@
             <div id="home" class="active">
                 <img src="https://agungdwisahputra.github.io/Ucapan-Ulang-Tahun-Salma/img/galeri/alma%20(3).jpg" class="rounded mx-auto d-block img-bulet" alt="Foto Salma" style="border-radius: 50% !important;border:5px solid #ffc107 !important;">
                 <h4 class="card-title mt-3"><b>...::[ DENCRYPT ]::...</b></h4>
-                <form action="decrypt.php" method="post">
-                    <input name="encrypt" class="form-control w-75 mx-auto mt-4" type="text" placeholder="Masukan Encrypt.." autofocus style="display: inline-block;">
-                    <button name="mulai" type="submit" class="btn btn-sm btn-success ms-2 p-2 px-4 mt-3 mt-md-0">Dencrypt</button>
-                </form>
+                <input id="input" name="encrypt" class="form-control w-75 mx-auto mt-4" type="text" placeholder="Masukan Encrypt.." autofocus style="display: inline-block;">
+                <button onclick="ambil()" name="mulai" type="submit" class="btn btn-sm btn-success ms-2 p-2 px-4 mt-3 mt-md-0">Dencrypt</button>
                 <div class="input-group mt-3">
-                    <textarea class="form-control p-3" rows="auto" readonly style="text-align: justify;"></textarea>
+                    <textarea id="hasil" class="form-control p-3" rows="auto" readonly style="text-align: justify;"></textarea>
                 </div>
             </div>
             <a href="https://www.instagram.com/agung.ds20/" target="_BLANK" class="btn btn-warning mt-3">@agung.ds20</a>
@@ -33,6 +31,109 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script>
+        function dencrypt(encrypt) {
+            var DENCYPT = '';
+            var L = "A";
+            var M = "B";
+            var N = "C";
+            var O = "D";
+            var P = "E";
+            var Q = "F";
+            var R = "G";
+            var S = "H";
+            var T = "I";
+            var U = "J";
+            var V = "K";
+            var W = "L";
+            var X = "M";
+            var Y = "N";
+            var Z = "O";
+            var A = "P";
+            var B = "Q";
+            var C = "R";
+            var D = "S";
+            var E = "T";
+            var F = "U";
+            var G = "V";
+            var H = "W";
+            var I = "X";
+            var J = "Y";
+            var K = "Z";
+            var kalimat = encrypt;
+            var input = kalimat.split("");
+            for (i = 0; i < input.length; i++) {
+                if (input[i] == "A") {
+                    input[i] = A;
+                } else if (input[i] == "B") {
+                    input[i] = B;
+                } else if (input[i] == "C") {
+                    input[i] = C;
+                } else if (input[i] == "D") {
+                    input[i] = D;
+                } else if (input[i] == "E") {
+                    input[i] = E;
+                } else if (input[i] == "F") {
+                    input[i] = F;
+                } else if (input[i] == "G") {
+                    input[i] = G;
+                } else if (input[i] == "H") {
+                    input[i] = H;
+                } else if (input[i] == "I") {
+                    input[i] = I;
+                } else if (input[i] == "J") {
+                    input[i] = J;
+                } else if (input[i] == "K") {
+                    input[i] = K;
+                } else if (input[i] == "L") {
+                    input[i] = L;
+                } else if (input[i] == "M") {
+                    input[i] = M;
+                } else if (input[i] == "N") {
+                    input[i] = N;
+                } else if (input[i] == "O") {
+                    input[i] = O;
+                } else if (input[i] == "P") {
+                    input[i] = P;
+                } else if (input[i] == "Q") {
+                    input[i] = Q;
+                } else if (input[i] == "R") {
+                    input[i] = R;
+                } else if (input[i] == "S") {
+                    input[i] = S;
+                } else if (input[i] == "T") {
+                    input[i] = T;
+                } else if (input[i] == "U") {
+                    input[i] = U;
+                } else if (input[i] == "V") {
+                    input[i] = V;
+                } else if (input[i] == "W") {
+                    input[i] = W;
+                } else if (input[i] == "X") {
+                    input[i] = X;
+                } else if (input[i] == "Y") {
+                    input[i] = Y;
+                } else if (input[i] == "Z") {
+                    input[i] = Z;
+                } else if (input[i] == "#") {
+                    input[i] = " ";
+                }
+                console.log(input[i]);
+            }
+            for (i = 0; i < input.length; i++) {
+                DENCYPT += input[i];
+            }
+            hasil.innerHTML = DENCYPT;
+        }
+
+        function ambil() {
+            var input = document.getElementById("input");
+            encrypt = input.value;
+
+            dencrypt(encrypt);
+        }
+    </script>
+
 </body>
 
 </html>

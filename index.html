@@ -19,16 +19,12 @@
             <div id="home" class="active">
                 <img src="https://agungdwisahputra.github.io/Ucapan-Ulang-Tahun-Salma/img/galeri/alma%20(3).jpg" class="rounded mx-auto d-block img-bulet" alt="Foto Salma" style="border-radius: 50% !important;border:5px solid #ffc107 !important;">
                 <h4 class="card-title mt-3"><b>...::[ DENCRYPT ]::...</b></h4>
-                <form action="" method="post">
+                <form action="decrypt.php" method="post">
                     <input name="encrypt" class="form-control w-75 mx-auto mt-4" type="text" placeholder="Masukan Encrypt.." autofocus style="display: inline-block;">
                     <button name="mulai" type="submit" class="btn btn-sm btn-success ms-2 p-2 px-4 mt-3 mt-md-0">Dencrypt</button>
                 </form>
                 <div class="input-group mt-3">
-                    <textarea class="form-control p-3" rows="auto" readonly style="text-align: justify;"><?php if (isset($DENCYPT)) {
-                                                                                                                echo $DENCYPT;
-                                                                                                            } else {
-                                                                                                                echo 'Kosong';
-                                                                                                            } ?></textarea>
+                    <textarea class="form-control p-3" rows="auto" readonly style="text-align: justify;"></textarea>
                 </div>
             </div>
             <a href="https://www.instagram.com/agung.ds20/" target="_BLANK" class="btn btn-warning mt-3">@agung.ds20</a>
